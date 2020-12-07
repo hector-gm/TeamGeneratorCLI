@@ -10,9 +10,21 @@ const outputPath = path.join(OUTPUT_DIR, "team.html");
 
 const render = require("./lib/htmlRenderer");
 
+console.log(`Hello there, let's get started with creating your team member directory:`);
 
 // Write code to use inquirer to gather information about the development team members,
 // and to create objects for each team member (using the correct classes as blueprints!)
+
+const gatherInfo = [
+    {
+        type:`input`,
+        name:`identifyManager`,
+        message:`Who is the manager for this team?`
+    },
+    {
+        
+    }
+]
 
 // After the user has input all employees desired, call the `render` function (required
 // above) and pass in an array containing all employee objects; the `render` function will

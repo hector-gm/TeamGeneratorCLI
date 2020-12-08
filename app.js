@@ -91,7 +91,7 @@ inquirer.prompt(questions).then((response) => {
 // generate and return a block of HTML including templated divs for each employee!
 
         fs.writeFile(outputPath, render(teamArray), (error) =>
-        error ? console.error(error) : console.log(`Team member list created! Check out the .html file created`)
+        error ? console.error(error) : console.log(`Team member list created! Check out the team.html file created`)
         );
     }
 })

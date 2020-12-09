@@ -71,30 +71,59 @@ const questions = [
     }
 ];
 
-inquirer.prompt(questions).then((response) => {
-    if(response.role === 'Engineer') {
-        const newEngineer = new Engineer(response.name, response.id, response.email, response.github);
-        teamArray.push(newEngineer)
-    } else if (response.role === 'Intern') {
-        const newIntern = new Intern(response.name, response.id, response.email, response.school);
-        teamArray.push(newIntern)
-    } else if (response.role === 'Manager') {
-        const newManager = new Manager(response.name, response.id, response.email, response.officeNumber);
-        teamArray.push(newManager)
-    }
-    if(response.addTeamMember){
-        inquirer.prompt(questions)
-    } else {
+function createDirectoryEntry() {
+    inquirer
+        .prompt(questions).then((response) => {
+        if(response.role === 'Engineer') {
+            const newEngineer = new Engineer(response.name, response.id, response.email, response.github);
+            teamArray.push(newEngineer)
+        } else if (response.role === 'Intern') {
+            const newIntern = new Intern(response.name, response.id, response.email, response.school);
+            teamArray.push(newIntern)
+        } else if (response.role === 'Manager') {
+            const newManager = new Manager(response.name, response.id, response.email, response.officeNumber);
+            teamArray.push(newManager)
+        }
 
-// After the user has input all employees desired, call the `render` function (required
-// above) and pass in an array containing all employee objects; the `render` function will
-// generate and return a block of HTML including templated divs for each employee!
-
-        fs.writeFile(outputPath, render(teamArray), (error) =>
-        error ? console.error(error) : console.log(`Team member list created! Check out the team.html file created`)
+        if (response.addTeamMember){
+            createDirectoryEntry();
+        } else {
+            fs.writeFile(outputPath, render(teamArray), (error) =>
+            error ? console.error(error) : console.log(`Team member list created! Check out the team.html file created`)
         );
-    }
-})
+        }
+     })
+}
+
+createDirectoryEntry();
+console.log(teamArray);
+
+
+
+// inquirer.prompt(questions).then((response) => {
+//     if(response.role === 'Engineer') {
+//         const newEngineer = new Engineer(response.name, response.id, response.email, response.github);
+//         teamArray.push(newEngineer)
+//     } else if (response.role === 'Intern') {
+//         const newIntern = new Intern(response.name, response.id, response.email, response.school);
+//         teamArray.push(newIntern)
+//     } else if (response.role === 'Manager') {
+//         const newManager = new Manager(response.name, response.id, response.email, response.officeNumber);
+//         teamArray.push(newManager)
+//     }
+//     if(response.addTeamMember){
+//         inquirer.prompt(questions)
+//     } else {
+
+// // After the user has input all employees desired, call the `render` function (required
+// // above) and pass in an array containing all employee objects; the `render` function will
+// // generate and return a block of HTML including templated divs for each employee!
+
+//         fs.writeFile(outputPath, render(teamArray), (error) =>
+//         error ? console.error(error) : console.log(`Team member list created! Check out the team.html file created`)
+//         );
+//     }
+// })
 
 
 

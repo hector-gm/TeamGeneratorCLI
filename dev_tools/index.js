@@ -42,9 +42,8 @@ const questions = [
             name: `tests`,
             message: `Are any tests being written for your application?`,
             choices: [
-                {name: `Test(s) in development`},
-                {name: `None planned at the moment`},
-                {name: `Test(s) welcome and appreciated, feel free to send any`}
+                {name: `Test(s) in test folder within repository`},
+                {name: `None at the moment`},
             ],
         },
         {
@@ -87,27 +86,27 @@ inquirer.prompt(questions).then(answers => {
     *[Questions](#questions)
 
 
-## Installation  
+## Installation  <a name='installation'></a>
 ${installation }
 
-## Usage  
+## Usage  <a name='usage'></a>
 ${usage}
 
 Check a video of the application walkthrough here: https://drive.google.com/file/d/1SG2Glr5Fx_iS49lccHiWTD1TQ1r6WolC/preview.
 
-## License  
+## License  <a name='license'></a>
 ${license} 
 [![License](https://img.shields.io/badge/License-OpenSource-yellow.svg)](https://opensource.org/licenses/)
 
-## Contributing 
+## Contributing <a name='contributing'></a>
 
 The Contributor Covenant Code of Conduct 
 https://www.contributor-covenant.org/version/2/0/code_of_conduct/code_of_conduct.md is applicable. 
 
-## Tests  
+## Tests  <a name='tests'></a>
 ${tests} 
 
-## Questions 
+## Questions <a name='questions'></a>
 Email: ${email}  
 GitHub: http://github.com/${account};
 

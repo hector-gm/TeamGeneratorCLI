@@ -21,13 +21,10 @@ Copy the repository files; to ensure node dependencies are properly loaded pleas
 ## Usage <a name="usage"></a>   
 Follow the application's prompts to generate the html directory. If a response isn't logged, an incomplete directory will result.
 
-<<<<<<< HEAD
 ![Sample Image](./assets/sample_directory.png)
 
-Check a video of the application walkthrough here: https://drive.google.com/file/d/1SG2Glr5Fx_iS49lccHiWTD1TQ1r6WolC/preview.
-=======
 Check a video of the application walkthrough here: https://drive.google.com/file/d/13JU8ppW2VTSejDkyRw-OrRtfn7__LBYu/view .
->>>>>>> d7124437de27ca0ba7775d6862b1f6876e46f7ae
+
 
 ## License <a name="license"></a>  
 MIT License 

@@ -7,12 +7,12 @@
     This is command-line application meant to ask for the user's input to create a directory of team members. It will prompt for team members' name, employee ID, and email address. Furthermore, role-specific queries for additional relevant information will be shown for each role. At the end of the application's run, an html file will be created with the user's input and utilizing templates to render adequately.
 
 ## Table of Contents 
-    * [Installation](#installation) 
-    * [Usage](#usage)
-    * [License](#license) 
-    * [Contributing Guidelines](#contributing) 
-    * [Tests](#tests) 
-    * [Questions](#questions)
+   * [Installation](#installation) 
+   * [Usage](#usage)
+   * [License](#license) 
+   * [Contributing Guidelines](#contributing)    
+   * [Tests](#tests) 
+   * [Questions](#questions)
 
 
 ## Installation <a name="installation"></a> 

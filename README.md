@@ -21,6 +21,8 @@ Copy the repository files; to ensure node dependencies are properly loaded pleas
 ## Usage  
 Follow the application's prompts to generate the html directory. If a response isn't logged, an incomplete directory will result.
 
+![Sample Image](./assets/sample_directory.png)
+
 Check a video of the application walkthrough here: https://drive.google.com/file/d/1SG2Glr5Fx_iS49lccHiWTD1TQ1r6WolC/preview.
 
 ## License  
